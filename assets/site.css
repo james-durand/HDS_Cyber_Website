@@ -795,6 +795,25 @@ a:focus-visible, button:focus-visible {
   text-align: center;
 }
 
+/* Syndication credit — shown on posts republished from another publisher */
+.post-source {
+  margin-top: clamp(2rem, 4vw, 2.75rem);
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--hairline);
+  font-size: var(--text-small);
+  line-height: 1.7;
+  color: var(--slate);
+  font-style: italic;
+}
+.post-source a {
+  color: var(--copper-deep);
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.post-source a:hover { color: var(--copper); }
+
 /* Closing call-to-action on each post */
 .post-cta {
   margin-top: clamp(2.5rem, 5vw, 3.5rem);
