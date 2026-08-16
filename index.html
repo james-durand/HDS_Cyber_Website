@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVRPDK1384"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XVRPDK1384');
+  </script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '3988948328081548');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=3988948328081548&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <title>HDS Cyber — Managed Cyber Security Services in Hoedspruit</title>
+  <meta name="description" content="HDS Cyber keeps lowveld businesses running — practical cyber resilience for farms, lodges, schools, merchants and estate agencies. Book a free 30-minute health check.">
+  <meta property="og:title" content="HDS Cyber — Cybersecurity is community security.">
+  <meta property="og:description" content="Hoedspruit-based cyber resilience: managed protection, staff training, backup and compliance. Book your free Lowveld Cyber Check.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hdscyber.co.za">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Brand colours (per Brand Guidelines v1.0 §3) */
+      --navy: #1E3A5F;
+      --copper: #D17A2F;
+      --copper-deep: #B9601E;
+      --deep-navy: #0F1F33;
+      --sand: #F5F1EA;
+      --ink: #1A1A1A;
+      --slate: #5F6B7A;
+      --hairline: #E5E2DA;
+      --light-blue: #B5D4F4;
+      --white: #FFFFFF;
+
+      /* Typography (§4): Inter does the heavy lifting; Space Grotesk for hero/slogan only */
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+
+      /* Type scale */
+      --text-hero: clamp(2.25rem, 5vw, 3.5rem);   /* hero 44–56px */
+      --text-h2: clamp(1.5rem, 2.4vw, 1.875rem);  /* section H2 24–30px */
+      --text-h3: 1.125rem;                          /* H3 18px */
+      --text-body: 1rem;
+      --text-small: 0.8125rem;                      /* caption 13px */
+      --text-eyebrow: 0.6875rem;                    /* 11px */
+
+      --radius: 6px;
+      --radius-lg: 12px;
+      --hero-text-width: 540px;
+      --nav-h: 70px;
+      --maxw: 1140px;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--nav-h) + 12px);
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      font-weight: 400;
+      font-size: var(--text-body);
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--sand);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: 100%;
+      max-width: var(--maxw);
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+    }
+
+    /* Eyebrow — Inter 500 medium, tracked caps (§4.3) */
+    .eyebrow {
+      margin: 0;
+      font-family: var(--font-body);
+      font-weight: 500;
+      font-size: var(--text-eyebrow);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--copper);
+    }
+
+    /* ---------- Shared CTA button ---------- */
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.85rem 1.6rem;
+      min-height: 48px;
+      background: var(--copper);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+      border-radius: var(--radius);
+      box-shadow:
+        0 1px 2px rgba(15, 31, 51, 0.08),
+        0 10px 24px -10px rgba(209, 122, 47, 0.55);
+      transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), background-color 0.3s ease;
+    }
+    .cta svg { width: 20px; height: 20px; }
+    .cta:hover {
+      background: var(--copper-deep);
+      transform: translateY(-2px);
+      box-shadow: 0 2px 4px rgba(15, 31, 51, 0.10), 0 16px 32px -12px rgba(209, 122, 47, 0.7);
+    }
+    .cta:active { transform: translateY(0); }
+    .cta:focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
+
+    /* Secondary — outlined navy (§7.1) */
+    .cta--ghost {
+      background: transparent;
+      color: var(--navy);
+      border: 1px solid var(--navy);
+      box-shadow: none;
+    }
+    .cta--ghost:hover {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: var(--white);
+      box-shadow: 0 8px 20px -12px rgba(15, 31, 51, 0.4);
+    }
+
+    /* Secondary on dark backgrounds (contact band) */
+    .cta--ghost-light {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: none;
+    }
+    .cta--ghost-light:hover {
+      background: var(--white);
+      color: var(--navy);
+      border-color: var(--white);
+    }
+
+    /* WhatsApp button accent (brand-preferred primary contact) */
+    .cta--whatsapp { background: var(--copper); }
+    .cta--whatsapp svg { width: 22px; height: 22px; }
+
+    /* Marks a placeholder WhatsApp link until the real number is added */
+    [data-whatsapp-placeholder] { position: relative; }
+
+    /* ---------- Nav ---------- */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 50;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      transition: background-color 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+      border-bottom: 1px solid transparent;
+    }
+    .nav.is-scrolled {
+      background: rgba(245, 241, 234, 0.82);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom-color: var(--hairline);
+      box-shadow: 0 1px 16px -8px rgba(15, 31, 51, 0.25);
+    }
+    .nav__inner {
+      width: 100%;
+      max-width: var(--maxw);
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: var(--navy);
+    }
+    .brand img { width: 34px; height: 34px; display: block; }
+    .brand__name {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+    }
+    .brand__name span { color: var(--copper); }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: clamp(1rem, 2.5vw, 2rem);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav__links a {
+      position: relative;
+      text-decoration: none;
+      color: var(--navy);
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.4rem 0;
+      transition: color 0.2s ease;
+    }
+    .nav__links a::after {
+      content: "";
+      position: absolute;
+      left: 0; bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background: var(--copper);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 0.3s var(--ease);
+    }
+    .nav__links a:hover { color: var(--copper-deep); }
+    .nav__links a.is-active { color: var(--copper-deep); }
+    .nav__links a.is-active::after { transform: scaleX(1); }
+
+    .nav__cta { display: inline-flex; }
+    .nav .cta { padding: 0.6rem 1.15rem; min-height: 42px; font-size: 0.9rem; }
+
+    .nav__toggle {
+      display: none;
+      width: 44px; height: 44px;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius);
+      cursor: pointer;
+      color: var(--navy);
+    }
+    .nav__toggle svg { width: 22px; height: 22px; }
+    .nav__toggle .icon-close { display: none; }
+    .nav.is-open .nav__toggle .icon-open { display: none; }
+    .nav.is-open .nav__toggle .icon-close { display: block; }
+
+    /* ---------- Section scaffolding ---------- */
+    .section { padding: clamp(4.5rem, 9vw, 7.5rem) 0; }
+    .section__head {
+      max-width: 640px;
+      margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+    }
+    .section--center .section__head { margin-inline: auto; text-align: center; }
+    /* Section H2 — Inter 600 (§4.3) */
+    .section__title {
+      margin: 0.75rem 0 0;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: var(--text-h2);
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+      color: var(--navy);
+      text-wrap: balance;
+    }
+    .section__lead {
+      margin: 1rem 0 0;
+      font-size: 1.0625rem;
+      color: var(--slate);
+      max-width: 58ch;
+    }
+    .section--center .section__lead { margin-inline: auto; }
+
+    /* Reveal on scroll */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .reveal.is-in { opacity: 1; transform: none; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      isolation: isolate;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: calc(var(--nav-h) + clamp(2rem, 6vw, 4rem)) 1.5rem clamp(3.5rem, 9vw, 6rem);
+      overflow: hidden;
+      background:
+        radial-gradient(120% 90% at 80% 8%, rgba(209, 122, 47, 0.10) 0%, rgba(209, 122, 47, 0) 55%),
+        radial-gradient(120% 90% at 10% 100%, rgba(30, 58, 95, 0.08) 0%, rgba(30, 58, 95, 0) 55%),
+        linear-gradient(180deg, #FFFFFF 0%, #FDFBF7 45%, var(--sand) 100%);
+    }
+    .hero__lines {
+      position: absolute; inset: 0; z-index: -2;
+      pointer-events: none; opacity: 0.5;
+      mask-image: radial-gradient(120% 80% at 50% 30%, #000 0%, transparent 78%);
+    }
+    .hero__lines path, .hero__lines circle { stroke: var(--hairline); fill: none; }
+    .hero__lines circle { fill: var(--hairline); stroke: none; }
+    .hero__grain {
+      position: absolute; inset: 0; z-index: -1;
+      pointer-events: none; opacity: 0.035; mix-blend-mode: multiply;
+    }
+    /* Hero max width 720px so the slogan reads as a statement (§7.1) */
+    .hero__inner {
+      position: relative;
+      display: flex; flex-direction: column; align-items: center;
+      max-width: 720px; width: 100%;
+    }
+    .status {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.4rem 0.85rem 0.4rem 0.7rem;
+      margin-bottom: clamp(1.5rem, 4vw, 2rem);
+      border: 1px solid var(--hairline); border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(6px);
+      box-shadow: 0 1px 2px rgba(15, 31, 51, 0.05);
+      font-size: var(--text-eyebrow); font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy);
+    }
+    .status__dot {
+      width: 8px; height: 8px; border-radius: 50%; background: var(--copper);
+      box-shadow: 0 0 0 0 rgba(209, 122, 47, 0.5);
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(209, 122, 47, 0.45); }
+      50%      { box-shadow: 0 0 0 6px rgba(209, 122, 47, 0); }
+    }
+    .hero__logo { width: clamp(150px, 32vw, 210px); height: auto; margin-bottom: clamp(1rem, 3vw, 1.6rem); }
+    .hero__eyebrow { margin-bottom: 1rem; }
+    /* Hero headline — Space Grotesk (the one signature slogan moment) */
+    .hero__title {
+      margin: 0 0 1.25rem; max-width: 16ch;
+      font-family: var(--font-display); font-weight: 700;
+      font-size: var(--text-hero); line-height: 1.12;
+      letter-spacing: -0.02em; color: var(--navy); text-wrap: balance;
+    }
+    .hero__body {
+      margin: 0 auto 2rem; max-width: var(--hero-text-width);
+      font-size: 1.125rem; line-height: 1.6; color: var(--ink);
+    }
+    .hero__actions {
+      display: flex; flex-wrap: wrap; gap: 0.85rem; justify-content: center;
+    }
+    .scroll-hint {
+      margin-top: clamp(2.5rem, 6vw, 4rem);
+      display: inline-flex; flex-direction: column; align-items: center; gap: 0.4rem;
+      font-size: var(--text-eyebrow); letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--slate); text-decoration: none;
+    }
+    .scroll-hint svg { width: 20px; height: 20px; animation: bob 2.2s ease-in-out infinite; }
+    @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(5px); } }
+
+    /* ---------- Services (four pillars) ---------- */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: clamp(1rem, 2vw, 1.5rem);
+    }
+    /* White card, 4px copper LEFT border, copper icon in sand square (§7.1) */
+    .card {
+      background: var(--white);
+      border: 1px solid var(--hairline);
+      border-left: 4px solid var(--copper);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 1.5rem;
+      transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px -22px rgba(15, 31, 51, 0.4);
+    }
+    .card__icon {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; margin-bottom: 1.1rem;
+      border-radius: 10px;
+      background: var(--sand);
+      color: var(--copper-deep);
+    }
+    .card__icon svg { width: 24px; height: 24px; }
+    /* H3 — Inter 600 */
+    .card__title {
+      margin: 0 0 0.4rem; font-family: var(--font-body);
+      font-weight: 600; font-size: var(--text-h3); color: var(--navy);
+    }
+    .card__text { margin: 0; font-size: 0.9rem; color: var(--slate); line-height: 1.6; }
+
+    /* Free health-check lead-in line above the cards */
+    .pillars-note {
+      margin: 0 0 1.75rem;
+      font-size: 0.95rem; color: var(--slate);
+    }
+    .pillars-note strong { color: var(--navy); font-weight: 600; }
+
+    /* ---------- Who we protect — five verticals, single column (§7.1) ---------- */
+    .sectors { background: var(--white); border-block: 1px solid var(--hairline); }
+    .sector-list {
+      display: flex; flex-direction: column;
+      gap: clamp(0.85rem, 1.8vw, 1.1rem);
+      max-width: 840px; margin-inline: auto;
+    }
+    .sector {
+      display: flex; align-items: flex-start; gap: 1.1rem;
+      padding: 1.4rem 1.5rem;
+      border: 1px solid var(--hairline);
+      border-left: 4px solid var(--copper);
+      border-radius: var(--radius-lg);
+      background: var(--sand);
+      transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), background-color 0.3s ease;
+    }
+    .sector:hover { transform: translateX(4px); background: #FBF8F2; box-shadow: 0 14px 30px -22px rgba(15,31,51,0.4); }
+    .sector__icon {
+      flex: none;
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 46px; height: 46px; border-radius: 10px;
+      background: var(--white); border: 1px solid var(--hairline);
+      color: var(--copper-deep);
+    }
+    .sector__icon svg { width: 24px; height: 24px; }
+    .sector__eyebrow {
+      margin: 0 0 0.15rem; font-size: var(--text-eyebrow); font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate);
+    }
+    /* Vertical slogan — navy semibold (§7.1). Never modified (§1). */
+    .sector__slogan { margin: 0 0 0.3rem; font-family: var(--font-body); font-weight: 600; color: var(--navy); font-size: 1.0625rem; line-height: 1.35; }
+    .sector__desc { margin: 0; font-size: 0.875rem; color: var(--slate); line-height: 1.55; }
+
+    /* ---------- About ---------- */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: center;
+    }
+    .about__body p { margin: 0 0 1.1rem; color: var(--ink); }
+    .about__body p:last-child { margin-bottom: 0; }
+    .about__body strong { color: var(--navy); font-weight: 600; }
+    .stat-panel {
+      position: relative;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: var(--radius-lg);
+      padding: clamp(1.75rem, 3vw, 2.5rem);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .stat-panel__lines { position: absolute; inset: 0; z-index: -1; opacity: 0.25; pointer-events: none; }
+    .stat-panel__lines path, .stat-panel__lines circle { stroke: var(--light-blue); fill: none; }
+    .stat-panel__lines circle { fill: var(--copper); stroke: none; }
+    .stat {
+      padding: 1.1rem 0;
+      border-bottom: 1px solid rgba(181, 212, 244, 0.18);
+    }
+    .stat:last-child { border-bottom: none; padding-bottom: 0; }
+    .stat:first-child { padding-top: 0; }
+    .stat__num {
+      font-family: var(--font-body); font-weight: 700;
+      font-size: clamp(1.5rem, 2.6vw, 1.9rem); color: var(--copper);
+      line-height: 1.1;
+    }
+    .stat__label { font-size: var(--text-small); color: var(--light-blue); margin-top: 0.2rem; }
+
+    /* ---------- How we work ---------- */
+    .how { background: var(--white); border-block: 1px solid var(--hairline); }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: clamp(1rem, 2.5vw, 2rem);
+      position: relative;
+    }
+    .steps::before {
+      content: ""; position: absolute;
+      top: 26px; left: 12%; right: 12%; height: 2px;
+      background: repeating-linear-gradient(90deg, var(--copper) 0 8px, transparent 8px 16px);
+      opacity: 0.5; z-index: 0;
+    }
+    .step { position: relative; z-index: 1; text-align: center; }
+    .step__node {
+      width: 54px; height: 54px; margin: 0 auto 1.1rem;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 50%;
+      background: var(--sand);
+      border: 2px solid var(--copper);
+      color: var(--copper-deep);
+      font-family: var(--font-body); font-weight: 700; font-size: 1.25rem;
+      box-shadow: 0 0 0 6px var(--white);
+    }
+    .step__title { margin: 0 0 0.35rem; font-family: var(--font-body); font-weight: 600; font-size: var(--text-h3); color: var(--navy); }
+    .step__text { margin: 0; font-size: var(--text-small); color: var(--slate); line-height: 1.55; }
+
+    /* ---------- Contact band ---------- */
+    .contact {
+      position: relative;
+      isolation: isolate;
+      background: var(--deep-navy);
+      color: var(--white);
+      text-align: center;
+      overflow: hidden;
+    }
+    .contact__lines { position: absolute; inset: 0; z-index: -1; opacity: 0.3; pointer-events: none; mask-image: radial-gradient(110% 90% at 50% 40%, #000 0%, transparent 80%); }
+    .contact__lines path, .contact__lines circle { stroke: rgba(181,212,244,0.45); fill: none; }
+    .contact__lines circle { fill: var(--copper); stroke: none; }
+    .contact__title {
+      margin: 0.75rem auto 0; max-width: 20ch;
+      font-family: var(--font-body); font-weight: 700;
+      font-size: var(--text-h2); line-height: 1.18; letter-spacing: -0.01em;
+      text-wrap: balance;
+    }
+    .contact__text { margin: 1rem auto 2rem; max-width: 56ch; color: var(--light-blue); font-size: 1.0625rem; }
+    .contact__actions { display: flex; flex-wrap: wrap; gap: 0.85rem; justify-content: center; }
+    .contact__email { margin-top: 1.5rem; font-size: var(--text-small); color: rgba(255,255,255,0.7); }
+    .contact__email a { color: var(--light-blue); text-decoration: none; font-weight: 600; }
+    .contact__email a:hover { text-decoration: underline; }
+
+    /* Contact form — white card holding the embedded Freshsales web form */
+    .contact-form {
+      margin: clamp(2.5rem, 5vw, 3.75rem) auto 0;
+      max-width: 640px;
+      background: var(--white);
+      color: var(--ink);
+      border-radius: var(--radius-lg);
+      padding: clamp(1.5rem, 3.5vw, 2.5rem);
+      text-align: left;
+      box-shadow: 0 30px 60px -34px rgba(0, 0, 0, 0.6);
+    }
+    .contact-form__note { margin: 0 0 1.35rem; font-size: 0.9rem; color: var(--slate); text-align: center; }
+    /* Keep the third-party form's fields inside the card on small screens */
+    .contact-form__embed :is(input, textarea, select, button) { max-width: 100%; }
+    .contact-form__embed { min-height: 40px; }
+
+    /* ---------- Footer — deep navy (§7.1) ---------- */
+    .footer { background: var(--deep-navy); color: rgba(255,255,255,0.8); padding: clamp(2.5rem, 5vw, 3.5rem) 0; }
+    .footer__inner {
+      display: flex; flex-wrap: wrap; gap: 1.5rem;
+      align-items: flex-start; justify-content: space-between;
+    }
+    .footer .brand__name { color: var(--white); }
+    .footer__meta { font-size: var(--text-small); line-height: 1.7; margin-top: 0.85rem; }
+    .footer__meta a { color: var(--light-blue); text-decoration: none; }
+    .footer__meta a:hover { text-decoration: underline; }
+    .footer__links { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; list-style: none; margin: 0; padding: 0; }
+    .footer__links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: var(--text-small); }
+    .footer__links a:hover { color: var(--copper); }
+    .footer__legal {
+      width: 100%; margin-top: 1.5rem; padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      font-size: var(--text-eyebrow); letter-spacing: 0.04em; color: rgba(255,255,255,0.5);
+    }
+
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--copper);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 860px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: repeat(2, 1fr); gap: 2rem 1.5rem; }
+      .steps::before { display: none; }
+    }
+    @media (max-width: 760px) {
+      .nav__cta { display: none; }
+      .nav__toggle { display: inline-flex; }
+      .nav__links {
+        position: absolute;
+        top: var(--nav-h); left: 0; right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: rgba(245, 241, 234, 0.97);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--hairline);
+        box-shadow: 0 16px 24px -18px rgba(15,31,51,0.4);
+        padding: 0.5rem clamp(1.25rem, 4vw, 2.5rem) 1.25rem;
+        transform: translateY(-12px);
+        opacity: 0; pointer-events: none;
+        transition: opacity 0.25s ease, transform 0.25s var(--ease);
+      }
+      .nav.is-open .nav__links { opacity: 1; transform: none; pointer-events: auto; }
+      .nav__links li { width: 100%; }
+      .nav__links a { display: block; padding: 0.85rem 0; border-bottom: 1px solid var(--hairline); font-size: 1rem; }
+      .nav__links a::after { display: none; }
+      .nav__links .nav__cta-mobile { margin-top: 0.85rem; }
+      .nav__links .nav__cta-mobile a { border-bottom: none; }
+      .nav__links .nav__cta-mobile .cta { display: inline-flex; width: 100%; justify-content: center; }
+    }
+    @media (min-width: 761px) {
+      .nav__cta-mobile { display: none; }
+    }
+    @media (max-width: 480px) {
+      .steps { grid-template-columns: 1fr; }
+      .hero__actions { width: 100%; }
+      .hero__actions .cta { flex: 1 1 auto; justify-content: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+
+  <!-- Freshworks CRM tracking (live chat disabled for now via chat='false') -->
+  <script src='//fw-cdn.com/16836464/7368855.js' chat='false'></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="HDS Cyber — home">
+        <img src="assets/favicon.svg" alt="" aria-hidden="true">
+        <span class="brand__name">HDS<span>Cyber</span></span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#sectors">Who we protect</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#how">How we work</a></li>
+          <li class="nav__cta-mobile"><a href="mailto:hello@hdscyber.co.za?subject=Book%20my%20free%20Lowveld%20Cyber%20Check"><span class="cta">Book free check</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__cta">
+        <a class="cta" href="mailto:hello@hdscyber.co.za?subject=Book%20my%20free%20Lowveld%20Cyber%20Check">Book free check</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero" aria-label="HDS Cyber introduction">
+      <svg class="hero__lines" aria-hidden="true" focusable="false" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+        <g stroke-width="1.25">
+          <path d="M-20 210 H 520 a14 14 0 0 1 14 14 V 360" />
+          <path d="M1460 250 H 1010 a14 14 0 0 0 -14 14 V 430" />
+          <path d="M-20 690 H 470 a14 14 0 0 0 14 -14 V 540" />
+          <path d="M1460 640 H 980 a14 14 0 0 1 -14 -14 V 500" />
+          <path d="M210 -20 V 150 a14 14 0 0 0 14 14 H 360" />
+          <path d="M1230 920 V 760 a14 14 0 0 1 -14 -14 H 1080" />
+        </g>
+        <circle cx="534" cy="360" r="5" />
+        <circle cx="996" cy="430" r="5" />
+        <circle cx="484" cy="540" r="5" />
+        <circle cx="966" cy="500" r="5" />
+        <circle cx="360" cy="164" r="5" />
+        <circle cx="1080" cy="746" r="5" />
+      </svg>
+      <svg class="hero__grain" aria-hidden="true" focusable="false">
+        <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/></filter>
+        <rect width="100%" height="100%" filter="url(#grain)"/>
+      </svg>
+
+      <div class="hero__inner">
+        <span class="status"><span class="status__dot" aria-hidden="true"></span>Free 30-minute health check</span>
+
+        <img class="hero__logo" src="assets/hds-logo-primary.svg" alt="HDS Cyber — Managed Cyber Security Services" width="500" height="500">
+
+        <p class="eyebrow hero__eyebrow">Hoedspruit&nbsp; &middot; &nbsp;Lowveld&nbsp; &middot; &nbsp;Limpopo</p>
+
+        <h1 class="hero__title">Cybersecurity is community security.</h1>
+
+        <p class="hero__body">We keep lowveld businesses running &mdash; protecting the trade, the trust, and the data you can&rsquo;t afford to lose. Aware people, managed protection and reliable backup in one monthly service, with privacy compliance as a natural result.</p>
+
+        <div class="hero__actions">
+          <!-- WhatsApp: number is set once in the <script> at the bottom (WHATSAPP_NUMBER). Until then this is a placeholder. -->
+          <a class="cta cta--whatsapp" data-whatsapp-placeholder href="https://wa.me/27XXXXXXXXX?text=Hi%20HDS%20Cyber%2C%20I%27d%20like%20to%20book%20my%20free%20Lowveld%20Cyber%20Check." aria-label="Chat to HDS Cyber on WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat on WhatsApp
+          </a>
+          <a class="cta cta--ghost" href="mailto:hello@hdscyber.co.za?subject=Book%20my%20free%20Lowveld%20Cyber%20Check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            Book your free health check
+          </a>
+        </div>
+
+        <a class="scroll-hint" href="#services" aria-label="Scroll to services">
+          <span>Scroll</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Services — four pillars of resilience -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">What we do</p>
+          <h2 class="section__title" id="services-title">Four pillars of business resilience.</h2>
+          <p class="section__lead">Aware people who spot trouble, defences that keep most attacks out, fast containment when something gets through, and reliable recovery &mdash; with compliance following naturally.</p>
+        </div>
+
+        <p class="pillars-note reveal"><strong>It all starts with a free 30-minute health check</strong> &mdash; aligned with the internationally recognised CIS Controls baseline &mdash; giving you a plain-language report that shows exactly where you stand, and what (if anything) needs attention.</p>
+
+        <div class="cards">
+          <!-- Four pillars per marketing plan v16 §1 table — Column 1 = card heading -->
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <h3 class="card__title">The Human Advantage</h3>
+            <p class="card__text">Awareness and training turn your people into your strongest line of defence, not your weakest link &mdash; helping your team spot phishing, payment fraud and scams before they cause harm.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <h3 class="card__title">Prevent</h3>
+            <p class="card__text">Our Managed Protection Plan shrinks the attack surface so most attacks never land &mdash; keeping your systems up and the business trading.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </span>
+            <h3 class="card__title">Contain</h3>
+            <p class="card__text">When something does get through, monitoring and response limit the damage &mdash; we detect it early, respond fast, and stop it spreading.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"/><path d="M12 21v-9"/><path d="m8 17 4 4 4-4"/></svg>
+            </span>
+            <h3 class="card__title">Recover</h3>
+            <p class="card__text">Our cloud backup solution restores your information and rebuilds your environment fast &mdash; no ransom paid, no season lost.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who we protect — five verticals with their slogans -->
+    <section class="section sectors" id="sectors" aria-labelledby="sectors-title">
+      <div class="wrap">
+        <div class="section__head section--center reveal" style="margin-inline:auto;text-align:center;">
+          <p class="eyebrow">Who we protect</p>
+          <h2 class="section__title" id="sectors-title">Built around the lowveld&rsquo;s five communities.</h2>
+          <p class="section__lead">When a business here goes down, suppliers, staff and families feel it. We protect the organisations this community depends on.</p>
+        </div>
+
+        <div class="sector-list">
+          <div class="sector reveal">
+            <span class="sector__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>
+            </span>
+            <div class="sector__body">
+              <p class="sector__eyebrow">Agriculture</p>
+              <p class="sector__slogan">Cybersecurity is farm security.</p>
+              <p class="sector__desc">Keep the harvest, the cash flow and the export paperwork moving &mdash; no halted systems, no fraudulent payments.</p>
+            </div>
+          </div>
+
+          <div class="sector reveal">
+            <span class="sector__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M4 21V7l8-4 8 4v14"/><path d="M9 9h.01M9 13h.01M15 9h.01M15 13h.01M10 21v-4h4v4"/></svg>
+            </span>
+            <div class="sector__body">
+              <p class="sector__eyebrow">Hospitality &amp; Tourism</p>
+              <p class="sector__slogan">Your guests trust you with everything &mdash; including their cybersecurity.</p>
+              <p class="sector__desc">Keep the bookings flowing and guest data safe, so a breach never becomes the story that empties the rooms.</p>
+            </div>
+          </div>
+
+          <div class="sector reveal">
+            <span class="sector__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.5 3 6 3s6-2 6-3v-5"/></svg>
+            </span>
+            <div class="sector__body">
+              <p class="sector__eyebrow">Education</p>
+              <p class="sector__slogan">Parents trust the school to keep children safe. That includes cyberspace.</p>
+              <p class="sector__desc">Protect learner and parent data and keep the school running &mdash; whatever happens online.</p>
+            </div>
+          </div>
+
+          <div class="sector reveal">
+            <span class="sector__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 4 4h16l1 5"/><path d="M4 9v11h16V9"/><path d="M3 9h18"/><path d="M9 20v-6h6v6"/></svg>
+            </span>
+            <div class="sector__body">
+              <p class="sector__eyebrow">Merchants &amp; Retail</p>
+              <p class="sector__slogan">Secure today. Trade tomorrow.</p>
+              <p class="sector__desc">Keep the tills ringing and the doors open &mdash; protect the POS, the data and the cash flow from fraud.</p>
+            </div>
+          </div>
+
+          <div class="sector reveal">
+            <span class="sector__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 10h.01M12 10h.01M15 10h.01M9 14h.01M12 14h.01M15 14h.01"/></svg>
+            </span>
+            <div class="sector__body">
+              <p class="sector__eyebrow">Real Estate</p>
+              <p class="sector__slogan">Every sale deserves protection.</p>
+              <p class="sector__desc">Stop transfer fraud and stay privacy-compliant, so every deal closes safely and your name stays clean.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="about-grid">
+          <div class="about__body reveal">
+            <p class="eyebrow">Why HDS Cyber</p>
+            <h2 class="section__title" id="about-title">Enterprise expertise, brought home to the lowveld.</h2>
+            <p style="margin-top:1.25rem;">Big-city security firms treat Hoedspruit as a dot on a map. We live here. HDS Cyber is led by a globally certified security professional &mdash; <strong>CISSP-certified since 2008, with 30 years in corporate IT and information security</strong> &mdash; bringing enterprise-grade expertise home and making it affordable and jargon-free for the businesses of the lowveld.</p>
+            <p>We really sell one thing: <strong>resilience</strong>. Keep trading, keep getting paid, keep your customers&rsquo; trust, and recover fast when something slips through. No call-centre runaround, no fear-mongering &mdash; just steady, practical protection and a local expert who picks up the phone.</p>
+            <p>It starts with a free 30-minute health check &mdash; aligned with the internationally recognised CIS Controls (v8.1.2) baseline &mdash; and a plain-language report. From there we put the right protection in place and stand between your business and the people trying to harm it.</p>
+          </div>
+
+          <div class="stat-panel reveal" aria-label="What sets HDS Cyber apart">
+            <svg class="stat-panel__lines" aria-hidden="true" viewBox="0 0 320 320" preserveAspectRatio="xMidYMid slice">
+              <g stroke-width="1.25">
+                <path d="M-10 60 H 120 a12 12 0 0 1 12 12 V 150"/>
+                <path d="M330 100 H 220 a12 12 0 0 0 -12 12 V 200"/>
+                <path d="M-10 250 H 140 a12 12 0 0 0 12 -12 V 180"/>
+              </g>
+              <circle cx="132" cy="150" r="4"/>
+              <circle cx="208" cy="200" r="4"/>
+              <circle cx="152" cy="180" r="4"/>
+            </svg>
+            <div class="stat">
+              <div class="stat__num">CISSP</div>
+              <div class="stat__label">Globally certified &mdash; and certified since 2008</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">30 years</div>
+              <div class="stat__label">In corporate IT and information security</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Local</div>
+              <div class="stat__label">Hoedspruit-based, serving Mbombela to Phalaborwa</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Free</div>
+              <div class="stat__label">30-minute health check &mdash; no obligation, no jargon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How we work -->
+    <section class="section how" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section__head section--center reveal" style="margin-inline:auto;text-align:center;">
+          <p class="eyebrow">How we work</p>
+          <h2 class="section__title" id="how-title">Four steps to a resilient business.</h2>
+          <p class="section__lead">A straightforward path from &ldquo;where do we even start?&rdquo; to genuine peace of mind.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step__node" aria-hidden="true">1</div>
+            <h3 class="step__title">Health check</h3>
+            <p class="step__text">We start with a free 30-minute check and a plain-language risk report.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__node" aria-hidden="true">2</div>
+            <h3 class="step__title">Protect</h3>
+            <p class="step__text">We put the right protection, backup and training in place for your business.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__node" aria-hidden="true">3</div>
+            <h3 class="step__title">Monitor</h3>
+            <p class="step__text">We keep watch around the clock and keep your people sharp.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__node" aria-hidden="true">4</div>
+            <h3 class="step__title">Recover</h3>
+            <p class="step__text">If something slips through, we get you back up fast &mdash; no ransom, no lost season.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <svg class="contact__lines" aria-hidden="true" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice">
+        <g stroke-width="1.25">
+          <path d="M-20 140 H 520 a14 14 0 0 1 14 14 V 280"/>
+          <path d="M1460 180 H 1010 a14 14 0 0 0 -14 14 V 340"/>
+          <path d="M-20 460 H 470 a14 14 0 0 0 14 -14 V 360"/>
+          <path d="M1460 420 H 980 a14 14 0 0 1 -14 -14 V 320"/>
+        </g>
+        <circle cx="534" cy="280" r="5"/>
+        <circle cx="996" cy="340" r="5"/>
+        <circle cx="484" cy="360" r="5"/>
+        <circle cx="966" cy="320" r="5"/>
+      </svg>
+      <div class="wrap reveal">
+        <p class="eyebrow" style="color:var(--copper);">Get started</p>
+        <h2 class="contact__title" id="contact-title">Book your free Lowveld Cyber Check.</h2>
+        <p class="contact__text">30 minutes, no jargon, no hard sell. You&rsquo;ll get a plain-language report with a clear picture of where you stand &mdash; and what, if anything, needs attention.</p>
+        <div class="contact__actions">
+          <!-- WhatsApp: number is set once in the <script> at the bottom (WHATSAPP_NUMBER). Until then this is a placeholder. -->
+          <a class="cta cta--whatsapp" data-whatsapp-placeholder href="https://wa.me/27XXXXXXXXX?text=Hi%20HDS%20Cyber%2C%20I%27d%20like%20to%20book%20my%20free%20Lowveld%20Cyber%20Check." aria-label="Chat to HDS Cyber on WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat on WhatsApp
+          </a>
+          <a class="cta cta--ghost-light" href="mailto:hello@hdscyber.co.za?subject=Book%20my%20free%20Lowveld%20Cyber%20Check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            Book your free health check
+          </a>
+        </div>
+        <p class="contact__email">Or just say hello: <a href="mailto:hello@hdscyber.co.za">hello@hdscyber.co.za</a></p>
+
+        <div class="contact-form reveal">
+          <p class="contact-form__note">Prefer to write? Leave your details below and we&rsquo;ll come back to you within one business day.</p>
+          <div class="contact-form__embed">
+            <!-- Freshsales (Freshworks CRM) web form — renders inline -->
+            <script src='https://hdscyberptyltd.myfreshworks.com/crm/sales/web_forms/6e747af5c5ec9bb103acf233b94e894451fc4f576256ae742cc73ae40c58c7cc/form.js' crossorigin='anonymous' id='fs_6e747af5c5ec9bb103acf233b94e894451fc4f576256ae742cc73ae40c58c7cc'></script>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <a class="brand" href="#top" aria-label="HDS Cyber — home">
+          <img src="assets/logo-shield-white.svg" alt="" aria-hidden="true">
+          <span class="brand__name">HDS<span style="color:var(--copper);">Cyber</span></span>
+        </a>
+        <p class="footer__meta">
+          Practical cyber resilience for lowveld businesses<br>
+          Hoedspruit &middot; serving the lowveld corridor, Limpopo<br>
+          <a href="mailto:hello@hdscyber.co.za">hello@hdscyber.co.za</a>
+        </p>
+      </div>
+
+      <nav aria-label="Footer">
+        <ul class="footer__links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#sectors">Who we protect</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#how">How we work</a></li>
+          <li><a href="#contact">Book a check</a></li>
+        </ul>
+      </nav>
+
+      <p class="footer__legal">© <span id="year">2026</span> HDS Cyber (Pty) Ltd. Cybersecurity is community security.</p>
+    </div>
+  </footer>
+
+  <script>
+    /* =======================================================================
+       WhatsApp number — SET THIS ONCE when finalised, then you're done.
+       International format, digits only (no "+", no spaces). e.g. '27821234567'
+       Leave as '' to keep the placeholder (the WhatsApp buttons fall back to
+       email in the meantime, so they are never a dead link).
+       ======================================================================= */
+    var WHATSAPP_NUMBER = '27825546888';
+
+    (function () {
+      var WHATSAPP_MESSAGE = "Hi HDS Cyber, I'd like to book my free Lowveld Cyber Check.";
+      var digits = (WHATSAPP_NUMBER || '').replace(/[^0-9]/g, '');
+      Array.prototype.slice.call(document.querySelectorAll('[data-whatsapp-placeholder]')).forEach(function (a) {
+        if (digits) {
+          a.href = 'https://wa.me/' + digits + '?text=' + encodeURIComponent(WHATSAPP_MESSAGE);
+          a.removeAttribute('data-whatsapp-placeholder');
+        } else {
+          // No number yet — open email so the visitor still reaches us.
+          a.href = 'mailto:hello@hdscyber.co.za?subject=' + encodeURIComponent('Book my free Lowveld Cyber Check');
+          a.setAttribute('title', 'WhatsApp coming soon — opens email for now');
+        }
+      });
+    })();
+
+    (function () {
+      var nav = document.getElementById('nav');
+      var toggle = document.getElementById('navToggle');
+      var navLinks = document.getElementById('navLinks');
+      var links = Array.prototype.slice.call(navLinks.querySelectorAll('a[href^="#"]'));
+
+      // Year
+      var yr = document.getElementById('year');
+      if (yr) yr.textContent = new Date().getFullYear();
+
+      // Scrolled state for nav background
+      function onScroll() {
+        if (window.scrollY > 24) nav.classList.add('is-scrolled');
+        else nav.classList.remove('is-scrolled');
+      }
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      // Mobile menu toggle
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      // Close mobile menu after choosing a link
+      navLinks.addEventListener('click', function (e) {
+        if (e.target.closest('a')) {
+          nav.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Active link highlighting
+      var sections = ['services', 'sectors', 'about', 'how', 'contact']
+        .map(function (id) { return document.getElementById(id); })
+        .filter(Boolean);
+      var byId = {};
+      links.forEach(function (a) {
+        var id = a.getAttribute('href').slice(1);
+        byId[id] = a;
+      });
+
+      if ('IntersectionObserver' in window) {
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) {
+              links.forEach(function (a) { a.classList.remove('is-active'); });
+              var active = byId[en.target.id];
+              if (active) active.classList.add('is-active');
+            }
+          });
+        }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+        sections.forEach(function (s) { spy.observe(s); });
+
+        // Scroll reveal
+        var revealer = new IntersectionObserver(function (entries, obs) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) {
+              en.target.classList.add('is-in');
+              obs.unobserve(en.target);
+            }
+          });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+        Array.prototype.slice.call(document.querySelectorAll('.reveal')).forEach(function (el) {
+          revealer.observe(el);
+        });
+      } else {
+        Array.prototype.slice.call(document.querySelectorAll('.reveal')).forEach(function (el) {
+          el.classList.add('is-in');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
