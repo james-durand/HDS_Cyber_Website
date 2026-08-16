@@ -741,6 +741,15 @@ a:focus-visible, button:focus-visible {
 
 /* Long-form body copy — slightly wider leading than the marketing sections */
 .post__body { font-size: 1.0625rem; line-height: 1.75; }
+
+/* Spacing is owned by these two rules alone: zero every direct child's block
+   margins, then put the gap back between siblings. Both are specificity
+   (0,1,0) so source order decides, and nothing below may set a block margin
+   on a direct child except the heading overrides, which are (0,1,1) and are
+   meant to win. Adding `margin-block: 0` to a rule like `.post__body p`
+   silently kills the gap for that element — that is not a reset, it outranks
+   the owl selector. */
+.post__body > * { margin-block: 0; }
 .post__body > * + * { margin-top: 1.15rem; }
 .post__body h2 {
   margin-top: clamp(2rem, 4vw, 2.75rem);
@@ -757,11 +766,10 @@ a:focus-visible, button:focus-visible {
   font-size: var(--text-h3);
   color: var(--navy);
 }
-.post__body p { margin-block: 0; }
 .post__body strong { color: var(--navy); font-weight: 600; }
 .post__body a { color: var(--copper-deep); text-decoration: underline; text-underline-offset: 2px; }
 .post__body a:hover { color: var(--copper); }
-.post__body ul, .post__body ol { margin-block: 0; padding-left: 1.35rem; }
+.post__body ul, .post__body ol { padding-left: 1.35rem; }
 .post__body li + li { margin-top: 0.5rem; }
 .post__body li::marker { color: var(--copper); }
 .post__body blockquote {
@@ -824,6 +832,12 @@ a:focus-visible, button:focus-visible {
   border-left: 4px solid var(--copper);
   border-radius: var(--radius-lg);
 }
+/* Same two-rule spacing contract as .post__body — see the note there. These
+   must stay above the overrides below, since .post-note__title matches at the
+   same specificity and would otherwise lose to the owl on source order. */
+.post-note > * { margin-block: 0; }
+.post-note > * + * { margin-top: 1.05rem; }
+
 .post-note__title {
   margin: 0.5rem 0 1.1rem;
   font-family: var(--font-body);
@@ -832,17 +846,16 @@ a:focus-visible, button:focus-visible {
   line-height: 1.3;
   color: var(--navy);
 }
-.post-note > * + * { margin-top: 1.05rem; }
-.post-note p { margin-block: 0; font-size: 1rem; line-height: 1.7; }
+.post-note p { font-size: 1rem; line-height: 1.7; }
 .post-note h3 {
-  margin: 1.6rem 0 0;
+  margin-top: 1.6rem;
   font-family: var(--font-body);
   font-weight: 600;
   font-size: var(--text-h3);
   color: var(--navy);
 }
 .post-note strong { color: var(--navy); font-weight: 600; }
-.post-note ul { margin-block: 0; padding-left: 1.35rem; font-size: 1rem; line-height: 1.7; }
+.post-note ul { padding-left: 1.35rem; font-size: 1rem; line-height: 1.7; }
 .post-note li + li { margin-top: 0.5rem; }
 .post-note li::marker { color: var(--copper); }
 
