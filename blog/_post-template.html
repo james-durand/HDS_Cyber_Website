@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--
+  ===========================================================================
+  HDS CYBER — BLOG POST TEMPLATE
+
+  To publish a new post:
+
+    1. Copy this file to a new name in this same folder. Use lowercase words
+       separated by hyphens, ending in .html — that name becomes the web
+       address, so make it readable:
+           blog/backup-checklist-for-lodges.html
+       Do NOT rename this template itself; leave it here for next time.
+
+    2. Work through every line marked  <<< EDIT  below. There are eight.
+
+    3. Write the post inside <div class="post__body">. You can use:
+           <p>a paragraph</p>
+           <h2>A section heading</h2>
+           <h3>A smaller heading</h3>
+           <ul><li>a bullet</li></ul>
+           <ol><li>a numbered step</li></ol>
+           <blockquote><p>a pull quote</p></blockquote>
+           <strong>bold</strong> and <a href="...">a link</a>
+       Every one of these is already styled to match the brand.
+
+    4. Add the post to the listing: open index.html in this folder, copy an
+       existing <a class="post-card"> block, and paste it as the FIRST item
+       so newest appears first.
+
+    5. Upload the new file plus the updated blog/index.html to the host.
+
+  Note: this file starts with an underscore so it is easy to spot and never
+  gets mistaken for a real post. It is harmless if uploaded, but there is no
+  need to upload it.
+  ===========================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVRPDK1384"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XVRPDK1384');
+  </script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '3988948328081548');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=3988948328081548&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- <<< EDIT 1 — page title. Keep "— HDS Cyber" on the end. -->
+  <title>Post title goes here — HDS Cyber</title>
+
+  <!-- <<< EDIT 2 — one sentence for Google results. Aim for 150–160 characters. -->
+  <meta name="description" content="One clear sentence describing what this post covers and who it is for.">
+
+  <!-- <<< EDIT 3 — how the post looks when shared on WhatsApp or Facebook. -->
+  <meta property="og:title" content="Post title goes here">
+  <meta property="og:description" content="One clear sentence describing what this post covers and who it is for.">
+  <meta property="og:type" content="article">
+
+  <!-- <<< EDIT 4 — replace post-file-name.html with this file's actual name (both lines). -->
+  <meta property="og:url" content="https://hdscyber.co.za/blog/post-file-name.html">
+  <link rel="canonical" href="https://hdscyber.co.za/blog/post-file-name.html">
+
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/site.css">
+
+  <!-- Freshworks CRM tracking (live chat disabled for now via chat='false') -->
+  <script src='//fw-cdn.com/16836464/7368855.js' chat='false'></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav nav--solid" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="../index.html" aria-label="HDS Cyber — home">
+        <img src="../assets/favicon.svg" alt="" aria-hidden="true">
+        <span class="brand__name">HDS<span>Cyber</span></span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="navLinks">
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#sectors">Who we protect</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#how">How we work</a></li>
+          <li><a href="index.html" class="is-active">Blog</a></li>
+          <li class="nav__cta-mobile"><a href="mailto:hello@hdscyber.co.za?subject=Book%20my%20free%20Lowveld%20Cyber%20Check"><span class="cta">Book free check</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__cta">
+        <a class="cta" href="mailto:hello@hdscyber.co.za?subject=Book%20my%20free%20Lowveld%20Cyber%20Check">Book free check</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="subpage" id="top">
+    <section class="section" style="padding-top:0;">
+      <div class="wrap">
+        <article class="post">
+
+          <p class="breadcrumb">
+            <a href="../index.html">Home</a><span>/</span><a href="index.html">Blog</a>
+          </p>
+
+          <header>
+            <!-- <<< EDIT 5 — category label, and the date in BOTH places.
+                 datetime="" must be YYYY-MM-DD; the visible text is free-form. -->
+            <p class="post__meta">
+              <span class="tag">Category</span>
+              <time datetime="2026-01-01">1 January 2026</time>
+            </p>
+
+            <!-- <<< EDIT 6 — the headline, same wording as EDIT 1. -->
+            <h1 class="post__title">Post title goes here</h1>
+
+            <!-- <<< EDIT 7 — one or two sentences setting up the post. -->
+            <p class="post__standfirst">A short opening line that tells the reader why this matters to them, in plain language.</p>
+          </header>
+
+          <hr class="post__rule">
+
+          <!-- <<< EDIT 8 — the post itself. Replace everything between these
+               two comments. See the notes at the top of this file for the
+               tags you can use. -->
+          <div class="post__body">
+
+            <p>Opening paragraph. Lead with the situation the reader recognises, not with the technology.</p>
+
+            <h2>A section heading</h2>
+
+            <p>Body copy. Keep sentences short and concrete. Where you can, name the kind of business this applies to &mdash; a lodge, a packhouse, a school office &mdash; because that is what makes a reader think &ldquo;that is us&rdquo;.</p>
+
+            <ul>
+              <li>A practical point.</li>
+              <li>Another practical point.</li>
+            </ul>
+
+            <blockquote>
+              <p>Use a pull quote for the single line you would want someone to remember.</p>
+            </blockquote>
+
+            <h2>What to do about it</h2>
+
+            <ol>
+              <li>A step the reader can take today, without buying anything.</li>
+              <li>A step that takes a bit more effort.</li>
+              <li>The step where it makes sense to get help.</li>
+            </ol>
+
+          </div>
+          <!-- end post body -->
+
+          <!-- Closing call to action — the same on every post, no edit needed -->
+          <aside class="post-cta">
+            <h2 class="post-cta__title">Not sure where your business stands?</h2>
+            <p class="post-cta__text">The free 30-minute health check gives you a plain-language report against the CIS Controls baseline &mdash; what is fine, and what needs attention.</p>
+            <div class="post-cta__actions">
+              <a class="cta cta--whatsapp" data-whatsapp-placeholder href="https://wa.me/27XXXXXXXXX?text=Hi%20HDS%20Cyber%2C%20I%27d%20like%20to%20book%20my%20free%20Lowveld%20Cyber%20Check." aria-label="Chat to HDS Cyber on WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Chat on WhatsApp
+              </a>
+              <a class="cta cta--ghost-light" href="mailto:hello@hdscyber.co.za?subject=Book%20my%20free%20Lowveld%20Cyber%20Check">
+                Book your free health check
+              </a>
+            </div>
+          </aside>
+
+          <p class="post-foot">
+            <a href="index.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              All posts
+            </a>
+          </p>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <a class="brand" href="../index.html" aria-label="HDS Cyber — home">
+          <img src="../assets/logo-shield-white.svg" alt="" aria-hidden="true">
+          <span class="brand__name">HDS<span style="color:var(--copper);">Cyber</span></span>
+        </a>
+        <p class="footer__meta">
+          Practical cyber resilience for lowveld businesses<br>
+          Hoedspruit &middot; serving the lowveld corridor, Limpopo<br>
+          <a href="mailto:hello@hdscyber.co.za">hello@hdscyber.co.za</a>
+        </p>
+      </div>
+
+      <nav aria-label="Footer">
+        <ul class="footer__links">
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#sectors">Who we protect</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#how">How we work</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="../index.html#contact">Book a check</a></li>
+        </ul>
+      </nav>
+
+      <p class="footer__legal">© <span id="year">2026</span> HDS Cyber (Pty) Ltd. Cybersecurity is community security.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/site.js" defer></script>
+</body>
+</html>
