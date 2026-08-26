@@ -803,6 +803,109 @@ a:focus-visible, button:focus-visible {
   text-align: center;
 }
 
+
+/* ---------- Optional post components ----------
+   Each of these is a direct child of .post__body, so none of them may set a
+   block margin — the reset-plus-owl pair above owns vertical rhythm. */
+
+/* Attribution under a blockquote */
+.post__body blockquote cite {
+  display: block;
+  margin-top: 0.55rem;
+  font-style: normal;
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: var(--slate);
+}
+
+/* Key-point callout — the one line a skim-reader should catch */
+.post-key {
+  padding: 1.2rem 1.4rem;
+  background: var(--sand);
+  border-left: 4px solid var(--copper);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.post-key__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: var(--text-eyebrow);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--copper);
+}
+.post-key p { margin: 0; }
+.post-key p + p { margin-top: 0.75rem; }
+
+/* Numbered steps with filled navy counters, for ordered procedures */
+.post__body .post-steps {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: step;
+}
+.post-steps li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 2.5rem;
+  min-height: 1.75rem;
+}
+.post-steps li + li { margin-top: 0.85rem; }
+.post-steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 1;
+}
+
+/* Tables scroll inside their own wrapper rather than widening the page */
+.post-table { overflow-x: auto; }
+.post-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+.post-table thead th {
+  padding: 0.7rem 0.9rem;
+  background: var(--navy);
+  color: var(--white);
+  text-align: left;
+  font-size: var(--text-eyebrow);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.post-table tbody td {
+  padding: 0.75rem 0.9rem;
+  border-bottom: 1px solid var(--hairline);
+  vertical-align: top;
+}
+.post-table tbody tr:nth-child(odd) { background: var(--white); }
+.post-table tbody td:first-child {
+  font-weight: 600;
+  color: var(--navy);
+  white-space: nowrap;
+}
+
+/* Legal / pricing caveat at the foot of a post */
+.post-disclaimer {
+  margin-top: clamp(2rem, 4vw, 2.75rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--hairline);
+  font-size: var(--text-small);
+  line-height: 1.65;
+  color: var(--slate);
+}
 /* Syndication credit — shown on posts republished from another publisher */
 .post-source {
   margin-top: clamp(2rem, 4vw, 2.75rem);
