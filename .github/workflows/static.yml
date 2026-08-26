@@ -38,7 +38,7 @@ jobs:
           set -euo pipefail
           rm -rf _site && mkdir -p _site
           # Explicit allow-list: anything not named here is never published.
-          cp index.html CNAME _site/
+          cp index.html CNAME robots.txt sitemap.xml _site/
           cp -r assets _site/assets
           cp -r blog   _site/blog
           # Working files are prefixed with _ and are not part of the site.
