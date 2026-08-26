@@ -27,11 +27,19 @@
        existing <a class="post-card"> block, and paste it as the FIRST item
        so newest appears first.
 
-    5. Upload the new file plus the updated blog/index.html to the host.
+    5. Add the post to sitemap.xml in the repository root: a new <url> block
+       with its address and today's date as <lastmod>.
+
+       EXCEPTION: if this is a syndicated article, leave it OUT of the
+       sitemap. See the note above the syndication block near the bottom of
+       this file for why.
+
+    6. Commit and push to main. The GitHub Actions workflow deploys the site
+       automatically - there is no manual upload step any more.
 
   Note: this file starts with an underscore so it is easy to spot and never
-  gets mistaken for a real post. It is harmless if uploaded, but there is no
-  need to upload it.
+  gets mistaken for a real post. The deploy workflow strips blog/_*.html from
+  the published site, so it is never reachable on the web.
   ===========================================================================
 -->
 <html lang="en">
@@ -187,6 +195,13 @@
                That tells Google the original publisher owns the article, which
                is what stops it counting as duplicate content against us. Leave
                og:url pointing at our own page so shares still land here.
+
+               And do NOT add a syndicated post to sitemap.xml. A sitemap
+               should list canonical URLs only; listing a page whose canonical
+               points at another domain tells Google two contradictory things
+               about the same page. blog/still-on-windows-10.html is the
+               worked example - it is live on the site and linked from the
+               blog listing, but absent from the sitemap on purpose.
 
           <p class="post-source">
             Article used with permission from
