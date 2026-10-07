@@ -15,7 +15,7 @@
 
   <url>
     <loc>https://hdscyber.co.za/blog/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -23,6 +23,13 @@
   <url>
     <loc>https://hdscyber.co.za/blog/hidden-cost-of-a-free-inbox.html</loc>
     <lastmod>2026-08-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://hdscyber.co.za/blog/dont-make-it-easy-for-them.html</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
